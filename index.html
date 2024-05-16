@@ -9,50 +9,58 @@
     scroll-snap-type: y mandatory;
   }
 
-  p {
-    text-align: center;
-    font-family: "Cal";
-    color: white;
-    font-size: 40px;
-    opacity: 0;
-  }
-
   @font-face {
     font-family: "Cal";
     src: url(consola.ttf);
   }
+  
+  p {
+    text-align: center;
+    font-family: "Cal";
+    color: white;
+    opacity: 1;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
+  }
+
 
   @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
     100% {
       opacity: 1;
     }
   }
 
   .line1 {
-    text-shadow: 0px 0px 10px red;
+    text-shadow: 0px 0px 5px brown;
     animation: fadeIn 6s forwards 1s;
+    font-size: 15px;
+    
   }
 
-  .line2 {
-    text-shadow: 0px 0px 10px rgb(0, 255, 0);
-    animation: fadeIn 6s forwards 5s;
+  .searches {
+    font-size: 30px;
+    padding: 1000px 0px 1000px;
   }
+  
 
-  .line3 {
-    text-shadow: 3px 3px 5px rgb(0, 96, 255);
-    animation: fadeIn 6s forwards 9s;
-  }
 </style>
 
 
 <p class="line1">
-  <a href="https://ntckim.github.io/Haikuu/" style="text-decoration:none; color:inherit">A world made of code</a>
+  In August 2006, AOL released a text file containing the search history of 650,000 users over a 3-month period. The file was removed 3 days later, but by then it had already been widely distributed.
 </p>
 
-<p class="line2">
+<p class="searches">
+  A world made of code
+</p>
+
+<p class="searches">
   Split between existences
 </p>
 
-<p class="line3">
-  <a href="https://sophiafodor.github.io/haiku-sophia/" style="text-decoration:none; color:inherit">Growing up gen z</a>
+<p class="searches">
+  Growing up gen z
 </p>
