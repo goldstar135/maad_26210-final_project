@@ -1,4 +1,13 @@
 <style>
+  
+  .hidescroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide {
+    scrollbar-width: none;
+  }
+  
   html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://mycrochetspace.com/wp-content/uploads/2021/05/PXL_20210521_051850603.jpg");
     background-size: cover;
@@ -6,14 +15,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
-    scroll-snap-type: y mandatory;
   }
 
   body {
     margin: 0;
     height: 100vh;
     cursor: url("Magnifying Glass Cursor.png"), auto;
-    overflow: hidden;
   }
 
   @font-face {
@@ -26,8 +33,6 @@
     font-family: "Courier New";
     color: white;
     opacity: 0;
-    scroll-snap-stop: always;
-    scroll-snap-align: center;
   }
 
 
