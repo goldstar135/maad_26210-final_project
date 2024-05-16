@@ -18,31 +18,57 @@
     text-align: center;
     font-family: "Cal";
     color: white;
-    opacity: 1;
+    opacity: 0;
     scroll-snap-stop: always;
     scroll-snap-align: center;
   }
 
 
   @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
     100% {
       opacity: 1;
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
     }
   }
 
   .line1 {
     text-shadow: 0px 0px 5px brown;
     animation: fadeIn 6s forwards 1s;
-    font-size: 15px;
-    
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .line2 {
+    text-shadow: 0px 0px 5px brown;
+    animation: fadeIn 6s forwards 8s;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .line3 {
+    text-shadow: 0px 0px 5px brown;
+    animation: fadeIn 6s forwards 14s;
+    font-size: 20px;
+    padding: 20px;
   }
 
   .searches {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
     font-size: 30px;
     padding: 1000px 0px 1000px;
+    animation: type 1.5s forwards;
+    animation-timing-function: steps(30, end);
+    opacity: 1;
   }
   
 
@@ -50,7 +76,15 @@
 
 
 <p class="line1">
-  In August 2006, AOL released a text file containing the search history of 650,000 users over a 3-month period. The file was removed 3 days later, but by then it had already been widely distributed.
+  In August 2006, AOL released a text file containing the search history of 650,000 users over a 3-month period.
+</p>
+
+<p class="line2">  
+The file was removed 3 days later, but by then it had already been widely distributed.
+</p>
+
+<p class="line3">
+Scrolling below, you will find the search history of <br> User 10288049.
 </p>
 
 <p class="searches">
